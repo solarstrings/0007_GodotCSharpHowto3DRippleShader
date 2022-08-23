@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Ripple3D/Ripple3DMaterial.tres" type="Material" id=1]
+
+[sub_resource type="PlaneMesh" id=3]
+material = ExtResource( 1 )
+size = Vector2( 32, 32 )
+subdivide_width = 30
+subdivide_depth = 30
+
+[node name="Ripple3D" type="Spatial"]
+
+[node name="RippleMesh" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+material/0 = null
